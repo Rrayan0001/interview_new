@@ -1,84 +1,36 @@
-# AI Interview Bot
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-A full-stack application for resume parsing, candidate evaluation, and career development reporting.
+## Getting Started
 
-## 🏗️ Architecture
+First, run the development server:
 
-- **Frontend**: React + Vite + TypeScript
-- **Backend**: FastAPI (Python)
-- **AI/ML**: Groq LLM for resume parsing and report generation
-- **Database**: PostgreSQL (Neon) - Optional
-
-## 🚀 Quick Start
-
-### Prerequisites
-
-- Python 3.9+
-- Node.js 18+
-- Groq API Key (get from [console.groq.com](https://console.groq.com))
-
-### Local Development
-
-1. **Clone the repository**
-   ```bash
-   git clone https://github.com/Rrayan0001/interview_ai.git
-   cd interview_ai
-   ```
-
-2. **Backend Setup**
-   ```bash
-   cd backend
-   pip install -r requirements.txt
-   export GROQ_API_KEY=your_key_here
-   uvicorn main:app --reload
-   ```
-   Backend: `http://localhost:8000`
-
-3. **Frontend Setup**
-   ```bash
-   cd frontend
-   npm install
-   npm run dev
-   ```
-   Frontend: `http://localhost:10000`
-
-## 📁 Project Structure
-
-```
-.
-├── backend/           # FastAPI backend
-│   ├── main.py       # Main application
-│   └── requirements.txt
-├── frontend/          # React frontend
-│   ├── src/
-│   │   ├── App.tsx
-│   │   └── services/  # API service functions
-│   └── package.json
-├── pdf_to_text_groq.py  # PDF parsing utilities
-└── requirements.txt   # Root dependencies (legacy)
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
 ```
 
-## 🔑 Features
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-- ✅ Resume PDF parsing with Groq LLM
-- ✅ Extracts: Name, Email, Phone, 10th/12th percentages, Degree CGPA, Experience
-- ✅ Candidate evaluation and scoring
-- ✅ AI-powered career development reports
-- ✅ Fallback parsing (works without API key)
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## 📖 Documentation
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-See [DEPLOYMENT.md](./DEPLOYMENT.md) for detailed deployment instructions.
+## Learn More
 
-## 🛠️ Tech Stack
+To learn more about Next.js, take a look at the following resources:
 
-- **Frontend**: React, TypeScript, Vite
-- **Backend**: FastAPI, Python
-- **AI**: Groq API (LLM)
-- **PDF**: pypdf
-- **Database**: PostgreSQL (via psycopg)
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## 📝 License
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-MIT
+## Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
